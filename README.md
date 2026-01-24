@@ -3,153 +3,178 @@ Commercial use is not permitted without explicit authorization.
 
 ---
 
-## Repository Structure (Artifact Contents)
+# IRIS / MIRCF Evidence Repository
 
-This artifact intentionally contains **only the files listed below**.
+This repository contains the executable empirical evidence supporting the paper:
 
-There is **no `figures/` or `tables/` directory** in the submitted artifact.  
-All figures and tables are generated **at runtime inside the Jupyter notebook**.
+**IRIS — A Stability-First Mathematical Architecture for Self-Regulating Intelligence**
 
-### Contents
-
-- README.md  
-- LICENSE  
-- CITATION.cff  
-- KAS_Evidence.ipynb  
-- kas-sampling-theorem-appendix
-
-No additional scripts, datasets, or binaries are included or required.
+The artifact accompanies the theoretical and experimental results reported in Sections 4–6 of the manuscript and is provided to support transparency, inspection, and reproducibility of the reported findings.
 
 ---
 
-## Important Note for Reviewers
+## Repository Contents
 
-- This artifact is **not a software library**.
-- The **Jupyter notebook itself is the primary research artifact**.
-- No pre-generated figures or tables are included by design.
-- Running the notebook **top-to-bottom reproduces all figures, tables, and appendix validations** reported in the manuscript.
+- **IRIS_MIRCF_Evidence.ipynb**  
+  A single, self-contained Jupyter notebook that implements all simulations, ablation studies, and diagnostic metrics used in the experimental evaluation.  
+  Running the notebook reproduces the figures and summary statistics reported in the paper.
 
----
+- **CITATION.cff**  
+  Citation metadata for scholarly reference.
 
-# Kolmogorov–Arnold–Siddarth Sampling Theorem (KAS)
-## Reproducibility Artifact
+- **LICENSE**  
+  Licensing terms governing reuse of this artifact.
 
-This repository contains the official reproducibility artifact for the paper:
-
-**Kolmogorov–Arnold–Siddarth Sampling Theorem**
-
-The artifact consists of a **single, self-contained Jupyter notebook** that implements all simulations, empirical validations, figures, and tables supporting the theoretical claims of the paper.
-
-The notebook directly corresponds to:
-- Section 4 — Research Methodology  
-- Section 5 — Results and Empirical Validation (Observables O1–O6)  
-- Section 6 — Discussion and Future Directions  
-- Appendix A — Empirical and stochastic validation (A.1–A.14)
-
-All numerical values reported in the paper are computed from executed experiments and are not hard-coded.
+- **IRIS_MIRCF_Appendix_Reference.pdf** (optional)  
+  Supplementary mathematical reference material corresponding to Appendix A of the paper.
 
 ---
 
-## 📂 Notebook Contents
+## Reproducibility
 
-### `KAS_Evidence.ipynb`
+The notebook is designed to be executed top-to-bottom in a standard Python scientific environment.  
+No external datasets are required.
 
-This notebook reproduces **all empirical evidence** in the manuscript, including:
+All results are generated through controlled simulation using fixed experimental configurations and multiple random seeds, as described in the manuscript.
 
-- RF signal generation at **10 MHz** and **1.75 GHz**
-- Stochastic noise models:
-  - Gaussian
-  - Brownian (Wiener)
-  - Gaussian mixture
-- Finite-window functional evaluation:
-  - Power
-  - Lag-1 and lag-2 correlations
-- Spline-based Kolmogorov–Arnold Network (KAN) estimators
-- Observables **O1–O6**, including:
-  - Sampling / cylinder approximation error
-  - Noise averaging behavior
-  - Noise robustness
-  - Cross-frequency generalization
-  - Comparison with Shannon-style (FFT-based) baselines
-  - Modular error decomposition
-- Automatically generated:
-  - Fixed-number figures (as referenced in the paper)
-  - Tables A.X / A.Xb (Monte Carlo replicated)
+---
+
+## Scope and Intended Use
+
+This repository provides an **evidence artifact**, not a production-ready software framework.
+
+Specifically:
+- The code is intended to validate structural properties such as stability, coherence, sustainability, and diagnosability.
+- No task-level optimization, benchmark performance, or semantic correctness claims are made.
+- The implementation serves as a reference realization of the IRIS / MIRCF framework described in the paper.
+
+---
+
+## Relationship to the Paper
+
+The notebook corresponds directly to:
+- Section 4: Research Methodology  
+- Section 5: Experiments  
+- Section 6: Results and Discussion  
+
+Formal mathematical definitions are provided in the paper and its appendices; the notebook operationalizes these definitions for empirical evaluation.
+
+---
+
+## Citation
+
+If you use or reference this artifact, please cite the accompanying paper as specified in `CITATION.cff`.
+
+---
+
+## Disclaimer
+
+The authors provide this artifact to support scientific transparency and reproducibility.  
+The framework regulates the *dynamics* of reasoning processes and does not guarantee task correctness, safety, or alignment beyond what is explicitly discussed in the manuscript.
+---
 
 ---
 
 ## ▶️ How to Run
 
 ### 1. Open the notebook
-Open `KAS_Evidence.ipynb` in Jupyter Notebook or JupyterLab.
+Open `IRIS_MIRCF_Evidence.ipynb` in **Jupyter Notebook** or **JupyterLab**.
 
 ### 2. Execute all cells
 Run the notebook **from top to bottom** without modification.
 
-No additional configuration, downloads, or external data are required.
+No additional configuration, downloads, or external datasets are required.
+
+All figures, tables, and diagnostic outputs referenced in the manuscript are generated automatically during execution.
 
 ---
 
 ## Reproducibility Statement
 
-- All experiments are fully deterministic up to controlled random seeds.
+- All experiments are deterministic up to explicitly controlled random seeds.
 - The notebook executes on standard consumer-grade hardware (CPU-only).
 - No internet access is required.
-- All figures and tables are regenerated at runtime.
+- No external libraries beyond the standard scientific Python stack are used.
+- All figures, tables, and summary statistics are regenerated at runtime.
 
-This artifact is designed to satisfy common reproducibility and artifact-evaluation criteria (Goodman et al., 2016; ACM/IEEE guidelines).
+This artifact is designed to satisfy common reproducibility and artifact-evaluation criteria used by ACM, IEEE, Springer, and Elsevier venues.
 
 ---
 
 ## How to Review (Editor & Reviewer Note)
 
-**To reproduce all results reported in the paper, run `KAS_Evidence.ipynb` from top to bottom. All figures, tables, and appendix validations will be generated automatically.**
+**To reproduce all empirical results reported in the paper, run `IRIS_MIRCF_Evidence.ipynb` from top to bottom.**
+
+The notebook produces:
+- All figures referenced in Sections 5 and 6,
+- All steady-state statistics and confidence intervals,
+- All ablation and failure-mode demonstrations, and
+- Empirical validation corresponding to Appendix A definitions.
+
+No manual intervention or parameter tuning is required.
 
 ---
 
 ## Citation
 
-If you use or reference this artifact, please cite:
+If you use or reference this artifact, please cite the accompanying paper as specified in `CITATION.cff`.
 
 **Siddarth Laxminarayanan**  
-*Kolmogorov–Arnold–Siddarth Sampling Theorem*, 2026.  
-Reproducibility Artifact.
+*IRIS — A Stability-First Mathematical Architecture for Self-Regulating Intelligence*, 2026.  
+Reproducibility and Evidence Artifact.
 
-Citation metadata is provided in `CITATION.cff`.
+Machine-readable citation metadata is provided in `CITATION.cff` (GitHub / Zenodo compatible).
 
 ---
 
 ## Scope and Limitations
 
-This artifact validates the KAS theorem for **bounded quadratic and bilinear RF functionals** under finite sampling and stochastic noise.  
-It is not intended as a general-purpose DSP or neural-network library.
+This artifact validates the **structural and dynamical properties** of the IRIS / MIRCF framework, including:
+- Recursive stability,
+- Long-horizon sustainability,
+- Distributed coherence, and
+- Intrinsic diagnosability.
+
+It does **not**:
+- Optimize task performance,
+- Provide semantic correctness guarantees,
+- Replace learning algorithms, or
+- Serve as a production-grade AI system.
+
+The implementation is intended as a **reference realization** of the mathematical framework described in the paper.
 
 ---
 
 ## Contact
 
-Email : L.SIDDARTH@OUTLOOK.COM
+For questions related to reproducibility or artifact review, please use the GitHub issue tracker.
 
-For questions related to reproducibility or review, please use the GitHub issue tracker.
+Author contact (for editorial correspondence only):  
+**L. Siddarth** — l.siddarth@outlook.com
 
 ---
 
 ## Repository Structure (Single Source of Truth)
 
 ```text
-KAS/
-├── KAS_Evidence.ipynb    # Complete empirical evidence:
-│                         # • Section 4 — Research Methodology
-│                         # • Section 5 — Results (Observables O1–O6)
-│                         # • Section 6 — Discussion
-│                         # • Figures (fixed numbering)
-│                         # • Tables A.X / A.Xb
-│                         # • Appendix A empirical validation
+IRIS_MIRCF/
+├── IRIS_MIRCF_Evidence.ipynb   # Complete empirical evidence:
+│                               # • Section 4 — Research Methodology
+│                               # • Section 5 — Experiments
+│                               # • Section 6 — Results & Discussion
+│                               # • All figures (fixed numbering)
+│                               # • All tables and confidence intervals
+│                               # • Appendix A empirical validation
 │
-├── CITATION.cff           # Machine-readable citation metadata
-│                         # (GitHub / Zenodo compatible)
+├── CITATION.cff                # Machine-readable citation metadata
+│                               # (GitHub / Zenodo compatible)
 │
-├── README.md              # Reproducibility and reviewer guidance
+├── LICENSE                     # License terms
+│
+├── README.md                   # Reproducibility and reviewer guidance
+│
+└── IRIS_MIRCF_Appendix_Reference.pdf (optional)
+                                # Mathematical reference corresponding
+                                # to Appendix A of the paper
 
-No external scripts, datasets, or preprocessing steps are required.
-
+No external scripts, datasets, configuration files, or preprocessing steps are required.
