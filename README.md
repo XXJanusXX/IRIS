@@ -150,7 +150,7 @@ The implementation is intended as a **reference realization** of the mathematica
 For questions related to reproducibility or artifact review, please use the GitHub issue tracker.
 
 Author contact (for editorial correspondence only):  
-**L. Siddarth** — l.siddarth@outlook.com
+**Siddarth Laxminarayanan** — l.siddarth@outlook.com
 
 ---
 
