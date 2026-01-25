@@ -3,11 +3,12 @@ Commercial use is not permitted without explicit authorization.
 
 ---
 
-# IRIS / MIRCF Evidence Repository
+# IRIS — Intentional Reflexive Intelligence System
 
-This repository contains the executable empirical evidence supporting the paper:
+Repository: https://github.com/XXJanusXX/IRIS
 
-**IRIS — A Stability-First Mathematical Architecture for Self-Regulating Intelligence**
+This repository contains the executable evidence supporting the paper:
+"IRIS — A Stability-First Mathematical Architecture for Self-Regulating Intelligence"
 
 The artifact accompanies the theoretical and experimental results reported in Sections 4–6 of the manuscript and is provided to support transparency, inspection, and reproducibility of the reported findings.
 
