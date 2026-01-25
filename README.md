@@ -69,8 +69,10 @@ If you use or reference this artifact, please cite the accompanying paper as spe
 
 ## Disclaimer
 
-The authors provide this artifact to support scientific transparency and reproducibility.  
+The author provide this artifact to support scientific transparency and reproducibility.
+
 The framework regulates the *dynamics* of reasoning processes and does not guarantee task correctness, safety, or alignment beyond what is explicitly discussed in the manuscript.
+
 ---
 
 ---
