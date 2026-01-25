@@ -3,13 +3,13 @@ message: "If you use this work, please cite the associated journal article and t
 title: "Empirical Evidence for the Kolmogorov–Arnold–Siddarth Sampling Theorem"
 version: 1.0.0
 date-released: 2026-01-01
-license: MIT
+license: Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)
 
 authors:
   - family-names: Laxminarayanan
     given-names: Siddarth
 
-repository-code: https://github.com/XXJanusXX/KAS
+repository-code: https://github.com/XXJanusXX/IRIS
 
 keywords:
   - sampling theory
