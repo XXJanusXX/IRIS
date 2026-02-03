@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite the associated journal article and this repository."
-title: "Empirical Evidence for the Kolmogorov–Arnold–Siddarth Sampling Theorem"
+message: "If you use this work, please cite the associated publication and this repository."
+title: "MIRCF: Meta-Intentional Reflexive Cybernetic Framework for Multi-Agent System Stability"
 version: 1.0.0
 date-released: 2026-01-01
 license: Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)
@@ -12,16 +12,19 @@ authors:
 repository-code: https://github.com/XXJanusXX/IRIS
 
 keywords:
-  - sampling theory
-  - RF signal processing
-  - Kolmogorov–Arnold networks
-  - functional approximation
-  - stochastic processes
-  - signal functionals
+  - mircf
+  - multi-agent systems
+  - agentic ai
+  - cybernetics
+  - ai stability
+  - entropy drift
+  - reflexive systems
+  - ai governance
+  - distributed intelligence
 
 preferred-citation:
   type: article
-  title: "Kolmogorov–Arnold–Siddarth Sampling Theorem for Stochastic RF Functionals"
+  title: "MIRCF: A Meta-Intentional Reflexive Cybernetic Framework for Stability and Governance in Multi-Agent AI Systems"
   authors:
     - family-names: Laxminarayanan
       given-names: Siddarth
