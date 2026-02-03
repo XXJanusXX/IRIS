@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite the associated publication and this repository."
-title: "MIRCF: Meta-Intentional Reflexive Cybernetic Framework for Multi-Agent System Stability"
+message: "If you use this work, please cite the associated paper and this repository."
+title: "IRIS — Intentional Reflexive Intelligence System"
 version: 1.0.0
 date-released: 2026-01-01
 license: Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)
@@ -12,6 +12,7 @@ authors:
 repository-code: https://github.com/XXJanusXX/IRIS
 
 keywords:
+  - intentional reflexive intelligence
   - mircf
   - multi-agent systems
   - agentic ai
@@ -19,12 +20,12 @@ keywords:
   - ai stability
   - entropy drift
   - reflexive systems
+  - self-regulating intelligence
   - ai governance
-  - distributed intelligence
 
 preferred-citation:
   type: article
-  title: "MIRCF: A Meta-Intentional Reflexive Cybernetic Framework for Stability and Governance in Multi-Agent AI Systems"
+  title: "IRIS — A Stability-First Mathematical Architecture for Self-Regulating Intelligence"
   authors:
     - family-names: Laxminarayanan
       given-names: Siddarth
